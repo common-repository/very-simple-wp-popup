@@ -1,0 +1,95 @@
+/* class cursor pointer  */
+.vswpp-view-popup, .vswpp-box-popups, .vswpp-close-popup {
+	cursor:pointer; 
+	cursor: hand;
+}
+
+/* The open popup */
+.vswpp-open-popup .vswpp-popup-text {
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 999;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* The popup data */
+#vswpp-data {
+	top: 10%;
+	z-index: 99999;
+	width: 10%;
+	position: fixed;
+	margin: 0;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	word-wrap: break-word;
+}
+
+/* Popup close */
+.vswpp-close-popup {
+	width: 5%;
+	z-index: 99999;
+	position: fixed;
+	top: 10px;
+	left: 5px;
+}
+
+/* background popup */
+#vswpp-background-popup {
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99995;	
+}
+
+/* status popup */
+.vswpp-box-popups {
+	height: 25px;
+	width: 1%;
+	box-sizing: content-box;
+}
+
+#vswpp-next-popups-left {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	top: 6%;
+	z-index: 999999;
+	width: auto;
+	position: fixed;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 48.5%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+#vswpp-next-popups-right {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0 0 0 30px;
+	top: 6%;
+	z-index: 999999;
+	width: auto;
+	position: fixed;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 51%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.vswpp-img-popup {
+  max-width: 100%;
+  height: auto
+}

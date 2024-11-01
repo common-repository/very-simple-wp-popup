@@ -1,0 +1,104 @@
+/* Popup container - can be anything you want */
+.vswpp-preview-popup, .vswpp-close-popup {
+	cursor:pointer; 
+	cursor: hand;
+}
+.vswpp-open-popup {
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width:100px;
+}
+
+/* The actual popup */
+.vswpp-open-popup .vswpp-popup-text {
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+#vswpp-data {
+	top:10%;
+	z-index:99999;
+	width:10%;
+	position:fixed;
+	margin: 0;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	word-wrap: break-word;
+}
+/* Popup close */
+.vswpp-close-popup {
+	width: 5%;
+	z-index: 99999;
+	position: fixed;
+	top: 40px;
+	left: 5px;
+}
+
+#vswpp-background-popup {
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;	
+}
+
+.vswpp-form-popup > p.submit {
+    display: contents;
+}
+
+#vswpp-list-popup {
+	height: 600px;
+	overflow: auto;
+	width: auto;
+	border: 1px solid;
+	padding: 10px;
+}
+
+table.vswpp-ul-popup {
+	border: 1px solid gray;
+}
+
+td.vswpp-preview-popup {
+	padding: 16px;
+	width: 100%;
+}
+
+table.vswpp-ul-popup td {
+	min-width: 5px;	
+}
+
+.vswpp-help-popup {
+	color: red;
+}
+
+@media screen and (max-width: 600px) {
+   table.vswpp-ul-popup tr td:first-child {
+	   font-size: 1.1em;
+	   padding: 0px;
+   }
+   table.vswpp-ul-popup td {
+	   display: block;
+	   text-align:center;
+	   padding: 0px;
+   }
+   table.vswpp-ul-popup td:before {
+	   content: attr(data-th);
+	   display: block;
+	   text-align:center;
+   }
+}
